@@ -1,8 +1,10 @@
 var fs = require('fs');
 
 // Читаем файл
-var file_readed = fs.readFileSync('text.txt', 'utf8');
+fs.readFile('text.txt', 'utf8', function(err, data){
+  console.log(data);
+});
+// Создаём
+fs.writeFile('some.txt', 'hi, its me', function(err, data){});
 
-// Создаём  и заполняем файл
-var message = "Привет мир! \n" + file_readed;
-fs.writeFileSync('someNewFile.txt', message);
+console.log("test");
