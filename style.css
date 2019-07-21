@@ -1,0 +1,54 @@
+html{
+
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+    padding: 0;
+    margin: 0;
+}
+body{
+    max-width: 70%;
+    padding: 0 20px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5 );
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: 35pt;
+   /* padding: 0 auto; */
+    margin: 0 auto 10px;
+    word-wrap: normal;
+   /* font-size-adjust: 0.58; */
+}
+#container{
+    font-size: 14pt;
+    text-align: justify;
+}
+#btn{
+ display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+
+}
+#zagolovok{
+    width: 25%;
+}
+q{
+   /* background-image: -webkit-linear-gradient(left 10px #999999, #f2f2f2);*/
+  /*  background-image: linear-gradient(left 10% #999999, #f2f2f2 90%); */
+     background: -moz-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%);
+    background: -webkit-linear-gradient(left, #999999 0%,#999999 5%,#d1d1d1 1%,#fefefe 100%);
+    background: -o-linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%);
+    background: -ms-linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%);
+    background: linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%);
+    padding: 10px;
+    display: inline;
+    font-style: italic;
+
+}
