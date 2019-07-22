@@ -1,6 +1,5 @@
 //Подключение библиотеки для работы с файловой системой
 var fs = require('fs');
-
 //Подключаем библиотеку для HTTP-сервера
 var http = require('http');
 
@@ -20,7 +19,7 @@ fs.unlink('./new-one/some_new.txt', function () {
 // })
 
 // Чтение и запись файлов потоками
-// 
+//
 // var myReadShort = fs.createReadStream(__dirname + '/big.txt');
 // var myWriteShort = fs.createWriteStream(__dirname + '/news.txt');
 //
@@ -44,6 +43,29 @@ fs.unlink('./new-one/some_new.txt', function () {
 //   fs.createReadStream(__dirname + '/404.html').pipe(res);
 // }
 // })
+//
+// server.listen(3000, '127.0.0.1');
+// console.log("Мы отслеживаем порт 3000");
+
+// **************РАБОТА С JSON, а также вывод HTML *******************
+//
+// var server = http.createServer(function(req, res) {
+//   console.log("URL страницы:" + req.url);
+// /*Вывод HTML
+//   res.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'});
+//   var myReadShort = fs.createReadStream(__dirname + '/index.html', 'utf8');
+//   myReadShort.pipe(res);
+//   */
+//   //Вывод JSON
+//   res.writeHead(200, {'Content-Type': 'application/json; charset=utf-8'});
+//   var obj = {
+//     model: 'Audi',
+//     speed: '234',
+//     wheels: 4
+//   };
+//   res.end(JSON.stringify(obj));
+// })
+// 
 //
 // server.listen(3000, '127.0.0.1');
 // console.log("Мы отслеживаем порт 3000");
