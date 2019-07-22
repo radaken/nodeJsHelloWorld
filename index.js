@@ -1,3 +1,4 @@
+
 //Подключение библиотеки для работы с файловой системой
 var fs = require('fs');
 //Подключаем библиотеку для HTTP-сервера
@@ -65,9 +66,16 @@ fs.unlink('./new-one/some_new.txt', function () {
 //   };
 //   res.end(JSON.stringify(obj));
 // })
-// 
+//
 //
 // server.listen(3000, '127.0.0.1');
 // console.log("Мы отслеживаем порт 3000");
 
 //Заходить на 127.0.0.1:3000
+
+// // Читаем файл
+// fs.readFile('text.txt', 'utf8', function(err, data){
+//   console.log(data);
+// });
+// // Создаём
+// fs.writeFile('some.txt', 'hi, its me', function(err, data){});
